@@ -1,105 +1,110 @@
-# Frontend Mentor - Interactive card details form
+# 💳 Interactive Card Details Form
 
-![Design preview for the Interactive card details form coding challenge](preview.jpg)
+An **Interactive Card Details Form** built with **HTML5**, **CSS3**, and **JavaScript**.  
+The project dynamically updates a card preview as the user fills in the form, formats card numbers, and displays a confirmation message upon submission.
 
-## Welcome! 👋
+---
 
-Thanks for checking out this front-end coding challenge.
+## 🚀 Features
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+- **Real-time Card Preview** – Updates card number, holder name, expiration date, and CVC as the user types.
+- **Input Formatting** –  
+  - Card number automatically formatted in groups of 4 digits.  
+  - Expiration date restricted to MM/YY format.  
+  - CVC allows only numeric values.
+- **Responsive Design** – Works seamlessly on both desktop and mobile devices.
+- **Form Validation** – Required fields prevent empty submissions.
+- **Confirmation Screen** – Displays a "Thank You" message after form submission with a reset option.
+---
 
-**To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
+## 📂 Project Structure
 
-## The challenge
+```
+├── index.html       # Main HTML file
+├── style.css        # Styling and responsive layout
+├── script.js        # Interactive functionality
+├── images/          # Frontend Images
+├── Designs/         # Final Designs
+└── README.md        # Project documentation
+```
 
-Your challenge is to build out this interactive card details form and get it looking as close to the design as possible.
+---
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+## 🛠️ Technologies Used
 
-Your users should be able to:
+- **HTML5** – Structure and semantic markup
+- **CSS3** – Styling, layout, and responsive design
+- **JavaScript (ES6)** – DOM manipulation and event handling
+- **Google Fonts** – Space Grotesk font family
 
-- Fill in the form and see the card details update in real-time
-- Receive error messages when the form is submitted if:
-  - Any input field is empty
-  - The card number, expiry date, or CVC fields are in the wrong format
-- View the optimal layout depending on their device's screen size
-- See hover, active, and focus states for interactive elements on the page
+---
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+## 📋 How It Works
 
-### Expected behaviour
+1. **Card Number Input**
+   - Removes non-numeric characters
+   - Formats as `0000 0000 0000 0000`
+2. **Card Holder Name**
+   - Updates in uppercase
+3. **Expiration Date**
+   - Separates month and year inputs
+   - Restricts to numeric values
+4. **CVC**
+   - Allows only numbers
+5. **Confirm Button**
+   - Hides the form
+   - Shows "Thank You" message
+6. **Continue Button**
+   - Resets all inputs
+   - Restores default card preview
 
-- Update the details on the card as the user fills in the fields
-- Validate the form fields when the form is submitted
-- If there are no errors, display the completed state
-- Reset the form when the user clicks "Continue" on the completed state
+---
 
-**⚠️ IMPORTANT ⚠️: When you create the live version of your project, we recommmend giving it a random name for the URL. This is because with it being a fake credit card form, some browsers will open a warning notice before people can access your project. So it's best to name the project something unrelated to credit cards so that browsers don't show the warning to people viewing your project.**
+## 📱 Responsive Design
 
-## Where to find everything
+- **Desktop:** `1440px` layout with card images on the left and form on the right.
+- **Mobile:** `375px` layout with stacked cards and form below.
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+---
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+## 🎯 Usage
 
-If you would like the Figma design file to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/interactive-card-form.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd interactive-card-form
+   ```
+3. Open `index.html` in your browser.
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+---
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+## 📌 Future Improvements
 
-## Building your project
+- Add full form validation for incorrect inputs
+- Support for more card types (Visa, MasterCard detection)
+- Smooth animations between form and confirmation state
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+---
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+## 📜 License
 
-## Deploying your project
+This project is for **educational purposes** and inspired by the  
+[Frontend Mentor – Interactive Card Details Form Challenge](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw).
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+---
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+## 🖼️ Screenshots
 
-## Create a custom `README.md`
+### Desktop View
+![Desktop View](./Designs/Desktop%20View.png)
+![Desktop Active](./Designs/Desktop%20Active.png)
+![Desktop Complete](./Designs/Desktop%20Complete.png)
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community).
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
-
-The more specific you are with your questions, the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi@frontendmentor.io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+### Mobile View
+![Mobile View](./Designs/Mobile%20View.jpg)
+![Mobile Active](./Designs/Mobile%20Active.jpg)
+![Mobile Complete](./Designs/Mobile%20Complete.jpg)
