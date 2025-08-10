@@ -3,6 +3,9 @@
 An **Interactive Card Details Form** built with **HTML5**, **CSS3**, and **JavaScript**.  
 The project dynamically updates a card preview as the user fills in the form, formats card numbers, and displays a confirmation message upon submission.
 
+## 💳 Live Preview
+- [Live Link](https://vicky-yadav-01.github.io/interactive-card-details-form-main/)
+
 ---
 
 ## 🚀 Features
